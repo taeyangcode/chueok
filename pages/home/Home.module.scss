@@ -1,0 +1,92 @@
+$border: #1E1E1E;
+
+.homeContainer {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+}
+
+.polaroidContainer {
+    width: 500px;
+    height: 450px;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.polaroidHead {
+    grid-row-start: 1;
+    grid-row-end: 6;
+
+    justify-self: center;
+
+    width: 90%;
+    height: 100%;
+
+    border: 4px solid $border;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+
+    display: grid;
+    grid-template-areas: 
+        ". flashCover flashCover flashCover selfTimerButton lens lens lens lens lens lens . viewFinder viewFinder viewFinder ."
+        ". flashCover flashCover flashCover . lens lens lens lens lens lens . viewFinder viewFinder viewFinder ."
+        ". flashCover flashCover flashCover infraredLED lens lens lens lens lens lens . viewFinder viewFinder viewFinder ."
+        ". flashCover flashCover flashCover . lens lens lens lens lens lens . lightenDarkenSwitch lightenDarkenSwitch lightenDarkenSwitch ."
+        ". flashCover flashCover flashCover . lens lens lens lens lens lens . . . . ."
+        ". shutterSwitch shutterSwitch shutterSwitch . lens lens lens lens lens lens . . . . ."
+        ". shutterSwitch shutterSwitch shutterSwitch . . . . . . lightMeter . logo logo logo ."
+        ". shutterSwitch shutterSwitch shutterSwitch . . . . . . . . logo logo logo .";
+}
+
+.flashCover {
+    grid-area: flashCover;
+}
+
+.selfTimerButton {
+    grid-area: selfTimerButton;
+}
+
+.infraredLED {
+    grid-area: infraredLED;
+}
+
+.lens {
+    grid-area: lens;
+}
+
+.viewFinder {
+    grid-area: viewFinder;
+}
+
+.lightenDarkenSwitch {
+    grid-area: lightenDarkenSwitch;
+}
+
+.shutterSwitch {
+    grid-area: shutterSwitch;
+}
+
+.lightMeter {
+    grid-area: lightMeter;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.polaroidBody {
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+    justify-self: center;
+
+    width: 95%;
+    height: 100%;
+
+    border: 4px solid $border;
+    border-radius: 10px;
+}
