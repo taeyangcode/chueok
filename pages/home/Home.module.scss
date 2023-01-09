@@ -32,14 +32,14 @@ $border: #1E1E1E;
 
     display: grid;
     grid-template-areas: 
-        ". flashCover flashCover flashCover selfTimerButton lens lens lens lens lens lens . viewFinder viewFinder viewFinder ."
-        ". flashCover flashCover flashCover . lens lens lens lens lens lens . viewFinder viewFinder viewFinder ."
-        ". flashCover flashCover flashCover infraredLED lens lens lens lens lens lens . viewFinder viewFinder viewFinder ."
-        ". flashCover flashCover flashCover . lens lens lens lens lens lens . lightenDarkenSwitch lightenDarkenSwitch lightenDarkenSwitch ."
-        ". flashCover flashCover flashCover . lens lens lens lens lens lens . . . . ."
-        ". shutterSwitch shutterSwitch shutterSwitch . lens lens lens lens lens lens . . . . ."
-        ". shutterSwitch shutterSwitch shutterSwitch . . . . . . lightMeter . logo logo logo ."
-        ". shutterSwitch shutterSwitch shutterSwitch . . . . . . . . logo logo logo .";
+        ". flashCover       flashCover      flashCover      selfTimerButton lens    lens    lens    lens    lens    lens        . viewFinder            viewFinder          viewFinder          ."
+        ". flashCover       flashCover      flashCover      .               lens    lens    lens    lens    lens    lens        . viewFinder            viewFinder          viewFinder          ."
+        ". flashCover       flashCover      flashCover      infraredLED     lens    lens    lens    lens    lens    lens        . viewFinder            viewFinder          viewFinder          ."
+        ". flashCover       flashCover      flashCover      .               lens    lens    lens    lens    lens    lens        . lightenDarkenSwitch   lightenDarkenSwitch lightenDarkenSwitch ."
+        ". flashCover       flashCover      flashCover      .               lens    lens    lens    lens    lens    lens        . .                     .                   .                   ."
+        ". shutterSwitch    shutterSwitch   shutterSwitch   .               lens    lens    lens    lens    lens    lens        . .                     .                   .                   ."
+        ". shutterSwitch    shutterSwitch   shutterSwitch   .               .       .       .       .       .       lightMeter  . logo                  logo                logo                ."
+        ". shutterSwitch    shutterSwitch   shutterSwitch   .               .       .       .       .       .       .           . logo                  logo                logo                .";
 }
 
 .flashCover {
