@@ -1,5 +1,11 @@
 $border: #1e1e1e;
 
+@mixin center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .homeContainer {
 	width: 100%;
 	height: 100%;
@@ -31,21 +37,12 @@ $border: #1e1e1e;
 	border-radius: 10px 10px 0px 0px;
 
 	display: grid;
-	grid-template-areas:
-		". .                .               .               .               lens    lens    lens    lens    lens    lens        . viewFinder            viewFinder          viewFinder          ."
-		". flashCover       flashCover      flashCover      selfTimerButton lens    lens    lens    lens    lens    lens        . viewFinder            viewFinder          viewFinder          ."
-		". flashCover       flashCover      flashCover      infraredLED     lens    lens    lens    lens    lens    lens        . viewFinder            viewFinder          viewFinder          ."
-		". flashCover       flashCover      flashCover      .               lens    lens    lens    lens    lens    lens        . lightenDarkenSwitch   lightenDarkenSwitch lightenDarkenSwitch ."
-		". flashCover       flashCover      flashCover      .               lens    lens    lens    lens    lens    lens        . .                     .                   .                   ."
-		". shutterSwitch    shutterSwitch   shutterSwitch   .               lens    lens    lens    lens    lens    lens        . .                     .                   .                   ."
-		". shutterSwitch    shutterSwitch   shutterSwitch   .               .       .       .       .       .       lightMeter  . logo                  logo                logo                ."
-		". shutterSwitch    shutterSwitch   shutterSwitch   .               .       .       .       .       .       .           . logo                  logo                logo                .";
-    min-width: 0;
-    min-height: 0;
+	grid-template-columns: repeat(16, minmax(0, 1fr));
+	grid-template-rows: repeat(8, minmax(0, 1fr));
 }
 
 .flashCover {
-	grid-area: flashCover;
+	grid-area: 2 / 2 / 6 / 5;
 
     width: 100%;
     height: 100%;
@@ -53,7 +50,7 @@ $border: #1e1e1e;
     display: grid;
     place-items: center;
 
-    outline: 4px solid $border;
+    box-shadow: inset 0px 0px 0px 4px $border;
 
     border-radius: 10px;
 }
@@ -76,45 +73,60 @@ $border: #1e1e1e;
 }
 
 .selfTimerButton {
-	grid-area: selfTimerButton;
+	grid-area: 2 / 5 / 3 / 6;
 }
 
 .infraredLED {
-	grid-area: infraredLED;
+	grid-area: 3 / 5 / 4 / 6;
 }
 
 .selfTimerButton, .infraredLED {
-    min-width: 0;
-    min-height: 0;
+	width: 100%;
+	height: 100%;
 
-    & > div {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-    }
+	@include center;
+
+	& > div {
+		width: 70%;
+		aspect-ratio: 1 / 1;
+
+		@include center;
+
+		border-radius: 50%;
+		box-shadow: inset 0px 0px 0px 2.5px $border;
+	}
+
+	& > div > div {
+		width: 50%;
+		aspect-ratio: 1 / 1;
+
+		border-radius: 50%;
+		box-shadow: inset 0px 0px 0px 2px $border;
+	}
 }
 
 .lens {
-	grid-area: lens;
+	grid-area: 1 / 6 / 7 / 12;
 }
 
 .viewFinder {
-	grid-area: viewFinder;
+	grid-area: 1 / 13 / 4 / 16;
 }
 
 .lightenDarkenSwitch {
-	grid-area: lightenDarkenSwitch;
+	grid-area: 4 / 13 / 5 / 16;
 }
 
 .shutterSwitch {
-	grid-area: shutterSwitch;
+	grid-area: 6 / 2 / 9 / 5;
 }
 
 .lightMeter {
-	grid-area: lightMeter;
+	grid-area: 7 / 11 / 8 / 12;
 }
 
 .logo {
-	grid-area: logo;
+	grid-area: 7 / 13 / 9 / 16;
 }
 
 .polaroidBody {
