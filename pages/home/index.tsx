@@ -64,9 +64,44 @@ export default function Home() {
 					<div className={styles.lightMeter}>
 						<div></div>
 					</div>
-					<div className={styles.logo}>Chu{"\n"}Seok</div>
+					<div className={styles.logo}>Chu{"\n"}Eok</div>
 				</div>
-				<div className={styles.polaroidBody}></div>
+
+				<div className={styles.polaroidBody}>
+					<div className={styles.topLeftCorner}></div>
+					<div className={styles.filmDoorLatch}>
+						<div>
+							<div className={styles.latchBar}></div>
+							<div className={styles.latchCircle}></div>
+							<div className={styles.latchVoid}></div>
+						</div>
+					</div>
+					<div className={styles.topRightCorner}></div>
+
+					<div className={styles.filmShield}>
+						<div>
+							<div className={styles.filmShieldTop}></div>
+							<div className={styles.filmShieldCenter}></div>
+							<div className={styles.filmShieldBottom}></div>
+						</div>
+					</div>
+
+					<div className={styles.polaroidLogo}>
+						<div className={styles.polaroidLogoBlue}></div>
+						<div className={styles.polaroidLogoGreen}></div>
+						<div className={styles.polaroidLogoYellow}></div>
+						<div className={styles.polaroidLogoOrange}></div>
+						<div className={styles.polaroidLogoRed}></div>
+					</div>
+
+					<div className={styles.polaroidName}>
+						<span>Polaroid</span>
+					</div>
+
+					<div className={styles.iTypeCamera}>
+						<span>I-TYPE CAMERA</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
