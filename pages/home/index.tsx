@@ -15,16 +15,19 @@ export default function Home() {
 							<div></div>
 						</div>
 					</div>
+
 					<div className={styles.selfTimerButton}>
 						<div>
 							<div></div>
 						</div>
 					</div>
+
 					<div className={styles.infraredLED}>
 						<div>
 							<div></div>
 						</div>
 					</div>
+
 					<div className={styles.lens}>
 						<div>
 							<div>
@@ -36,6 +39,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+
 					<div className={styles.viewFinder}>
 						<div>
 							<div>
@@ -47,23 +51,29 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+
 					<div className={styles.lightenDarkenSwitch}>
 						<div className={styles.switchSigns}>
 							<span>-</span>
 						</div>
+
 						<div className={styles.switchSlider}>
 							<div></div>
 						</div>
+
 						<div className={styles.switchSigns}>
 							<span>+</span>
 						</div>
 					</div>
+
 					<div className={styles.shutterSwitch}>
 						<div></div>
 					</div>
+
 					<div className={styles.lightMeter}>
 						<div></div>
 					</div>
+
 					<div className={styles.logo}>Chu{"\n"}Eok</div>
 				</div>
 
@@ -102,6 +112,8 @@ export default function Home() {
 						<span>I-TYPE CAMERA</span>
 					</div>
 				</div>
+
+				<div className={styles.polaroidBodyDepth}></div>
 			</div>
 		</div>
 	);
