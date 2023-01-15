@@ -58,9 +58,13 @@ export default function Home() {
 							<span>+</span>
 						</div>
 					</div>
-					<div className={styles.shutterSwitch}></div>
-					<div className={styles.lightMeter}></div>
-					<div className={styles.logo}></div>
+					<div className={styles.shutterSwitch}>
+						<div></div>
+					</div>
+					<div className={styles.lightMeter}>
+						<div></div>
+					</div>
+					<div className={styles.logo}>Chu{"\n"}Seok</div>
 				</div>
 				<div className={styles.polaroidBody}></div>
 			</div>

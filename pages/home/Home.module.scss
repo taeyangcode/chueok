@@ -257,14 +257,52 @@ $border: #1e1e1e;
 
 .shutterSwitch {
 	grid-area: 6 / 2 / 9 / 5;
+
+	align-self: center;
+
+	@include center;
+
+	@include widthCircle(80%, 2px, $border);
+
+	& > div {
+		@include widthCircle(90%, 3px, $border);
+	}
 }
 
 .lightMeter {
-	grid-area: 7 / 11 / 8 / 12;
+	grid-area: 6 / 11 / 7 / 12;
+
+	justify-self: center;
+
+	@include center;
+
+	@include widthCircle(100%, 3px, $border);
+
+	& > div {
+		@include widthCircle(calc(100% - 5px), 2px, $border);
+	}
 }
 
 .logo {
-	grid-area: 7 / 13 / 9 / 16;
+	grid-area: 6 / 13 / 9 / 16;
+
+	place-self: center;
+
+	text-align: center;
+
+	font-family: "Roboto";
+	font-weight: 500;
+	font-size: 26px;
+	color: $border;
+
+	line-height: 22px;
+}
+
+.logo::after {
+	content: '2';
+
+	font-size: 28px;
+	font-weight: 900;
 }
 
 .polaroidBody {
