@@ -25,9 +25,39 @@ export default function Home() {
 							<div></div>
 						</div>
 					</div>
-					<div className={styles.lens}></div>
-					<div className={styles.viewFinder}></div>
-					<div className={styles.lightenDarkenSwitch}></div>
+					<div className={styles.lens}>
+						<div>
+							<div>
+								<div>
+									<div>
+										<div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className={styles.viewFinder}>
+						<div>
+							<div>
+								<div>
+									<div>
+										<div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className={styles.lightenDarkenSwitch}>
+						<div className={styles.switchSigns}>
+							<span>-</span>
+						</div>
+						<div className={styles.switchSlider}>
+							<div></div>
+						</div>
+						<div className={styles.switchSigns}>
+							<span>+</span>
+						</div>
+					</div>
 					<div className={styles.shutterSwitch}></div>
 					<div className={styles.lightMeter}></div>
 					<div className={styles.logo}></div>
