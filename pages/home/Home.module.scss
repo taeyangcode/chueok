@@ -296,6 +296,8 @@ $yellow2: #F6AC1E;
 	& > div {
 		@include widthCircle(90%, 4px, $border);
 
+		cursor: pointer;
+
 		background: $brightRed;
 	}
 }
@@ -448,15 +450,13 @@ $yellow2: #F6AC1E;
 
 	background: $greyOne;
 	overflow: hidden;
-	z-index: 2;
+	z-index: 1;
 }
 
 .latchVoid {
 	grid-column: 7 / 9;
 
 	background: $greyTwo;
-
-	z-index: 1;
 }
 
 .filmShield {
