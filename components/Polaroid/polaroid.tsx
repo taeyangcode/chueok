@@ -1,61 +1,118 @@
-import { CSSProperties } from "react";
 import styles from "./Polaroid.module.scss";
 
-interface PolaroidProps {
-	width: number;
+export default function Polaroid() {
+	<>
+		<div className={styles.polaroidContainer}>
+			<div className={styles.polaroidHead}>
+				<div className={styles.flashCover}>
+					<div className={styles.flashCoverLines}>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
 
-	photo?: any;
-	photoText?: string;
-}
+				<div className={styles.selfTimerButton}>
+					<div>
+						<div></div>
+					</div>
+				</div>
 
-interface PolaroidDimensions {
-	polaroidWidth: number;
-	polaroidHeight: number;
+				<div className={styles.infraredLED}>
+					<div>
+						<div></div>
+					</div>
+				</div>
 
-	photoLength: number;
-}
+				<div className={styles.lens}>
+					<div>
+						<div>
+							<div>
+								<div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-const polaroidDimensions = (width: number): PolaroidDimensions => {
-	return {
-		polaroidWidth: width,
-		polaroidHeight: width * 1.25,
+				<div className={styles.viewFinder}>
+					<div>
+						<div>
+							<div>
+								<div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-		photoLength: width * 0.91,
-	};
-};
+				<div className={styles.lightenDarkenSwitch}>
+					<div className={styles.switchSigns}>
+						<span>-</span>
+					</div>
 
-export default function Polaroid(props: PolaroidProps) {
-	const { width, photo, photoText } = props;
+					<div className={styles.switchSlider}>
+						<div></div>
+					</div>
 
-	const { polaroidWidth, polaroidHeight, photoLength } = polaroidDimensions(width);
+					<div className={styles.switchSigns}>
+						<span>+</span>
+					</div>
+				</div>
 
-	const polaroidContainerColor: string = "#efefee";
-	const polaroidContainerStyle: CSSProperties = {
-		width: polaroidWidth,
-		height: polaroidHeight,
-		background: polaroidContainerColor,
-	};
+				<div className={styles.shutterSwitch}>
+					<div id={"shutterSwitchButton"}></div>
+				</div>
 
-	const polaroidPhotoContainerStyle: CSSProperties = {
-		width: polaroidWidth,
-		height: polaroidWidth,
-	};
+				<div className={styles.lightMeter}>
+					<div></div>
+				</div>
 
-	const polaroidPhotoStyle: CSSProperties = {
-		width: photoLength,
-		height: photoLength,
-		background: typeof photo === "string" ? photo : "white",
-	};
-
-	return (
-		<div className={styles.polaroidContainer} style={polaroidContainerStyle}>
-			<div className={styles.polaroidPhotoContainer} style={polaroidPhotoContainerStyle}>
-				<div className={styles.polaroidPhoto} style={polaroidPhotoStyle}></div>
+				<div className={styles.logo}>Chu{"\n"}Eok</div>
 			</div>
 
-			<div className={styles.polaroidWhiteSpace}>
-				{photoText && <span className={styles.polaroidText}></span>}
+			<div className={styles.polaroidBody}>
+				<div className={styles.topLeftCorner}></div>
+				<div className={styles.filmDoorLatch}>
+					<div>
+						<div className={styles.latchBar}></div>
+						<div className={styles.latchCircle}></div>
+						<div className={styles.latchVoid}></div>
+					</div>
+				</div>
+				<div className={styles.topRightCorner}></div>
+
+				<div className={styles.filmShield}>
+					<div>
+						<div className={styles.filmShieldTop}></div>
+						<div className={styles.filmShieldCenter}></div>
+						<div className={styles.filmShieldBottom}></div>
+					</div>
+				</div>
+
+				<div className={styles.polaroidLogo}>
+					<div className={styles.polaroidLogoBlue}></div>
+					<div className={styles.polaroidLogoGreen}></div>
+					<div className={styles.polaroidLogoYellow}></div>
+					<div className={styles.polaroidLogoOrange}></div>
+					<div className={styles.polaroidLogoRed}></div>
+				</div>
+
+				<div className={styles.polaroidName}>
+					<span>Polaroid</span>
+				</div>
+
+				<div className={styles.iTypeCamera}>
+					<span>I-TYPE CAMERA</span>
+				</div>
 			</div>
+
+			<div className={styles.polaroidBodyDepth}></div>
 		</div>
-	);
+	</>;
 }
