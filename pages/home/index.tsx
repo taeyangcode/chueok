@@ -17,7 +17,7 @@ export default function Home() {
 	return (
 		<>
 			{/* <div style={{ position: "absolute", left: "50%" }}>
-				<Polaroid width={300} photo={"#3d3b3a"} />
+				<Polaroid width={150} photo={"#3d3b3a"} />
 			</div> */}
 
 			<div className={styles.homeContainer}>

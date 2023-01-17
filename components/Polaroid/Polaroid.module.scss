@@ -4,7 +4,7 @@ $border: #0c0c0b;
     display: flex;
     flex-direction: column;
 
-    box-shadow: -3px 3px 6px -2px #0c0c0b;
+    box-shadow: -2px 2px 3px -2px #0c0c0b;
 }
 
 .polaroidPhotoContainer {
@@ -14,7 +14,6 @@ $border: #0c0c0b;
 }
 
 .polaroidPhoto {
-    border-radius: 2px;
 }
 
 .polaroidWhiteSpace {

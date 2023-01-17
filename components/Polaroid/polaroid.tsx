@@ -29,10 +29,11 @@ export default function Polaroid(props: PolaroidProps) {
 
 	const { polaroidWidth, polaroidHeight, photoLength } = polaroidDimensions(width);
 
+	const polaroidContainerColor: string = "#efefee";
 	const polaroidContainerStyle: CSSProperties = {
 		width: polaroidWidth,
 		height: polaroidHeight,
-		background: "#ededec",
+		background: polaroidContainerColor,
 	};
 
 	const polaroidPhotoContainerStyle: CSSProperties = {
