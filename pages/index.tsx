@@ -1,13 +1,17 @@
-import Head from "next/head";
+import PhotoTest from "../components/PhotoTest/PhotoTest";
 
 export default function Home() {
 	return (
-		<>
-			<Head>
-				<title>추억</title>
-				<meta name="description" content="💭" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-			</Head>
-		</>
+		<div
+			style={{
+				display: "grid",
+				placeItems: "center",
+				transformStyle: "preserve-3d",
+				perspective: 1000,
+				perspectiveOrigin: "right center",
+			}}
+		>
+			<PhotoTest frameWidth={200} />
+		</div>
 	);
 }

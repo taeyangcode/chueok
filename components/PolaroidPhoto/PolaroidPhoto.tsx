@@ -54,7 +54,7 @@ export default function PolaroidPhoto(props: PolaroidPhotoProps) {
 			</div>
 
 			<div className={styles.polaroidWhiteSpace}>
-				{photoText && <span className={styles.polaroidText}></span>}
+				{photoText && <span className={styles.polaroidText}>{photoText}</span>}
 			</div>
 		</div>
 	);

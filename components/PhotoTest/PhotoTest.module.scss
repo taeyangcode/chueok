@@ -1,0 +1,43 @@
+.polaroidContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    transform: rotateX(70deg);
+}
+
+.polaroidContainerExtrusionBottom {
+    position: absolute;
+    transform: rotateX(70deg) translateZ(-10px);
+
+    background: darkorange;
+}
+
+.polaroidContainerExtrusionFront {
+    height: 10px;
+    width: 200px;
+    position: absolute;
+    transform: translateZ(100px);
+    background: green;
+}
+
+.polaroidFrame {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    background: blue;
+}
+
+.polaroidPhotoContainer {
+    background: green;
+}
+
+.polaroidWhiteSpace {
+    width: 100%;
+    flex-grow: 1;
+
+    background: orange;
+}
