@@ -1,0 +1,14 @@
+.bottleContainer {
+    display: flex;
+
+    place-self: center;
+}
+
+.bottleBody {
+    justify-self: center;
+    align-self: flex-end;
+
+    border: 2px solid black;
+
+    border-radius: 140px 140px 60% 60% / 140px 140px 30px 30px; 
+}

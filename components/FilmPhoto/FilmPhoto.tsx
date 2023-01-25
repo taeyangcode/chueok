@@ -1,16 +1,16 @@
 import { CSSProperties } from "react";
-import styles from "./PhotoTest.module.scss";
+import styles from "./FilmPhoto.module.scss";
 
-interface PhotoTestProps {
+interface FilmPhotoProps {
 	frameWidth: number;
 }
 
-export default function PhotoTest(props: PhotoTestProps) {
+export default function FilmPhoto(props: FilmPhotoProps) {
 	const { frameWidth } = props;
 	const widthRatio: number = 2.13;
 
 	const polaroidContainerWidth: number = frameWidth;
-	const polaroidContainerHeight: number = frameWidth * (3.39 / 2.13);
+	const polaroidContainerHeight: number = frameWidth * (3.39 / widthRatio);
 	const polaroidContainerStyle: CSSProperties = {
 		width: polaroidContainerWidth,
 		height: polaroidContainerHeight,

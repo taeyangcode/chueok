@@ -1,9 +1,10 @@
-import PhotoTest from "../components/PhotoTest/PhotoTest";
+import FilmPhoto from "../components/FilmPhoto/FilmPhoto";
+import JinroBottle from "../components/JinroBottle/JinroBottle";
 
 export default function Home() {
 	return (
 		<div style={{ display: "grid" }}>
-			<PhotoTest frameWidth={200} />
+			<JinroBottle bottleWidth={200} />
 		</div>
 	);
 }
