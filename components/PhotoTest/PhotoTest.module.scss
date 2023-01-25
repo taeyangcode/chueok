@@ -1,26 +1,21 @@
+$polaroid-frame-background:  #f5f5f5;
+
+$polaroid-photo-background: #212121; 
+
+$polaroid-photo-shadow: #424242; 
+
 .polaroidContainer {
+    place-self: center;
+
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
     flex-direction: column;
 
-    transform: rotateX(70deg);
-}
+    background: $polaroid-frame-background;
 
-.polaroidContainerExtrusionBottom {
-    position: absolute;
-    transform: rotateX(70deg) translateZ(-10px);
-
-    background: darkorange;
-}
-
-.polaroidContainerExtrusionFront {
-    height: 10px;
-    width: 200px;
-    position: absolute;
-    transform: translateZ(100px);
-    background: green;
+    box-shadow: -3px 3px 7px -3px $polaroid-photo-shadow;
 }
 
 .polaroidFrame {
@@ -28,16 +23,13 @@
     justify-content: center;
     align-items: flex-end;
 
-    background: blue;
 }
 
 .polaroidPhotoContainer {
-    background: green;
+    background: $polaroid-photo-background;
 }
 
 .polaroidWhiteSpace {
     width: 100%;
     flex-grow: 1;
-
-    background: orange;
 }

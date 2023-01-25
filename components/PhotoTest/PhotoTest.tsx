@@ -39,8 +39,6 @@ export default function PhotoTest(props: PhotoTestProps) {
 
 				<div className={styles.polaroidWhiteSpace}></div>
 			</div>
-			<div className={styles.polaroidContainerExtrusionFront}></div>
-			<div className={styles.polaroidContainerExtrusionBottom} style={polaroidContainerStyle}></div>
 		</>
 	);
 }
